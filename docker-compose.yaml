@@ -3,6 +3,8 @@ services:
   bind-dns:
     build: 
       context: bind-dns/
+    volumes: 
+      - "./bind-dns/config/named.conf:/etc/named.conf:ro"
     networks: 
       - internal
 

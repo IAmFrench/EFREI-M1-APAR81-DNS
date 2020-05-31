@@ -8,7 +8,7 @@
 > To install this project you just have to type the following command on your dev environment
 
 ```bash
-docker-compose -up
+docker-compose up -d
 ```
 
 ## Test & learn
