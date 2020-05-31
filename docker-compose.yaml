@@ -4,19 +4,19 @@ services:
     build: 
       context: bind-dns/
     volumes: 
-      - "./bind-dns/config/named.conf:/etc/named.conf:ro"
+      - "./bind-dns/config/named.conf:/etc/named.conf"
     networks: 
-      - internal
+      - private-sub
 
   bastion:
     build:
       context: bastion/
     tty: true
     networks: 
-      - internal
-      - bridge
+      - private-sub
+      - public-sub
     
 
 networks:
-  internal:
-  bridge:
+  private-sub:
+  public-sub:
