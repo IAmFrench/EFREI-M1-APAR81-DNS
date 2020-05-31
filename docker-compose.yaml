@@ -9,9 +9,11 @@ services:
   bastion:
     build:
       context: bastion/
+    tty: true
     networks: 
       - internal
       - bridge
+    
 
 networks:
   internal:
