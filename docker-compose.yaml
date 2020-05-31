@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  bind-dns:
+    build: 
+      context: bind-dns/
+    networks: 
+      - internal
+
+  bastion:
+    build:
+      context: bastion/
+    networks: 
+      - internal
+      - bridge
+
+networks:
+  internal:
+  bridge:
