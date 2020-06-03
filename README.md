@@ -47,3 +47,7 @@ dig @bind-dns google.com. any
 ```
 
 ![dig google using our dns server](./artefacts/bastion-cli-dig-google.com.png)
+
+> Pro Tips, we have configured our container such as logs are retrievable using the docker daemon (or quicky using the Docker dashboard):
+
+![Docker Dashboard - View project logs](./artefacts/docker-dashboard-view-project-logs.png)
