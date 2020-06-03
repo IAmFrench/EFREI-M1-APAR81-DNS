@@ -38,12 +38,12 @@ To connect directly to the bastion, just open the Docker Dashboard and click on 
 
 ![Docker Dashboard open bastion cli](./artefacts/docker-dashboard-open-bastion-cli.png)
 
+Or you can use the `docker exec` command to open a terminal (you will need the container id)
+![Windows Terminal - Open an interactive terminal using docker exec](./artefacts/terminal-connect-to-bastion-using-docker-exec.png)
+
 And finally you can types your commands in the shell:
-
-![Bastion CLI - Dig google.fr using the bind-dns server](./artefacts/bastion-cli-dig-google.png)
-
-```
+```bash
 dig @bind-dns google.com. any
 ```
 
-![dig google using our dns server](./artefacts/dig-google.com.png)
+![dig google using our dns server](./artefacts/bastion-cli-dig-google.com.png)
