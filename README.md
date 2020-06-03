@@ -27,6 +27,10 @@ You can always check if the containers are running by opening the Docker Dashboa
 
 ![Docker dashboard list of containers](./artefacts/docker-dashboard-list-of-containers.png)
 
+
+We can check if the service is running by checking the list of process using the `ps -aux` command:
+![Docker exec and check processes](./artefacts/bind9-container-list-process.png)
+
 ## Test & learn
 > You will have to connect to the bastion container to makes test
 
@@ -39,5 +43,7 @@ And finally you can types your commands in the shell:
 ![Bastion CLI - Dig google.fr using the bind-dns server](./artefacts/bastion-cli-dig-google.png)
 
 ```
-dig +short pares-donadei.com bind-dns
+dig @bind-dns google.com. any
 ```
+
+![dig google using our dns server](./artefacts/dig-google.com.png)

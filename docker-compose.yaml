@@ -8,6 +8,7 @@ services:
     networks: 
       - private-sub
 
+
   bastion:
     build:
       context: bastion/
@@ -15,7 +16,7 @@ services:
     networks: 
       - private-sub
       - public-sub
-    
+
 
 networks:
   private-sub:
